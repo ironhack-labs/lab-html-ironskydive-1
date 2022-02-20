@@ -30,7 +30,7 @@ You will be working on a new pen, so proceed to [CodePen](https://codepen.io/) a
 
 <br>
 
-![](https://media.giphy.com/media/xT5LMrGIfLuDtRSAMg/giphy.gif =300x)
+![](https://media.giphy.com/media/xT5LMrGIfLuDtRSAMg/giphy.gif)
 
 <br>
 
