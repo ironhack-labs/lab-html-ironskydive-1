@@ -4,93 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <!-- menu horizontal-->
-    <nav>
+    <nav class="nav-bar">
         <ul>
             <li><a href="#structure">Day Structure</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#schedule">Schedule</a></li>
         </ul>
     </nav>
-    <!--Banner-->
     <header>
         <h1>
             <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png" alt="">
             IronSkydive
         </h1>
         <h2>Let the trip begin</h2>
-        <aside>
-            <i>"The best experience of our lives"</i>
-            <p>Ariel Quñonez & Gonzalo Manrique, Ironhack Founders</p>
+        <aside class="quote">
+            <i>"The best experience of our lives"</i><br>
+            <span>Ariel Quñonez & Gonzalo Manrique, Ironhack Founders</span>
         </aside>
     </header>
-    <!--3 Buttons-->
-    <section>
+    <section id="general-information" class="dark-background">
         <article>
             <h3>Hello!</h3>
             <p>Welcome to IronSkydive, the best adventure you will ever have</p>
-            <a href="#">Learn More</a>
+            <a href="#" class="link-btn">Learn More</a>
         </article>
         <article>
             <h3>About us</h3>
             <p>We like a lot programming websites, but we also love to practice sport</p>
-            <a href="#">Watch Video</a>
+            <a href="#" class="link-btn">Watch Video</a>
         </article>
         <article>
             <h3>Wanna join?</h3>
             <p>Join our fitness program to be in good shpe while learning</p>
-            <a href="#">Register</a>
+            <a href="#" class="link-btn">Register</a>
         </article>
     </section>
-    <!--How do we structure the day?-->
-    <section>
+    <section id="structure">
         <h3>How do we structure the day?</h3>
         <div>
-            <article>
+            <article class="service-box">
                 <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png" alt="TrainingImg">
                 <h4>1. Training</h4>
-                <p></p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio molestiae itaque quis quisquam minima perspiciatis impedit excepturi? Reprehenderit alias odit, perspiciatis quisquam delectus exercitationem provident? Laborum voluptates ratione odit saepe.</p>
             </article>
-            <article>
+            <article class="service-box">
                 <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png" alt="GetReadyImg">
                 <h4>2. Get ready</h4>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt aliquam fuga doloremque ad dignissimos, sed veniam suscipit? Distinctio voluptates animi consequatur assumenda voluptas odit nemo veniam optio velit error?</p>
             </article>
-            <article>
+            <article class="service-box">
                 <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png" alt="FlyImg">
                 <h4>3. Fly</h4>
-                <p></p>                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo recusandae eveniet perferendis accusamus ipsum. Consequatur dolorum deleniti explicabo! Numquam labore impedit alias odio adipisci soluta minima at atque? Commodi, voluptate.</p>                
             </article>
-            <article>
+            <article class="service-box">
                 <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-jump.png" alt="JumpImg">
                 <h4>4. Jump!</h4>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, necessitatibus? Alias tenetur molestiae neque, atque dolorem maxime, tempore possimus soluta provident delectus voluptate reprehenderit reiciendis, labore quo placeat nihil excepturi.</p>
             </article>
         </div>
     </section>
-    <!--Team-->
-    <section>
+    <section id="team" class="dark-background">
         <h3>Team</h3>
-        <p></p>
+        <p class="section-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima animi commodi ea voluptates veniam ad, architecto excepturi ex! Nihil perferendis vero id aliquid laborum fuga! Facere, in! Fugiat, doloremque et.</p>
         <div>
             <article>
-                <h4>Harold Rothstein</h4>
+                <h4 class="member-name">Harold Rothstein</h4>
                 <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg" alt="HaroldImg">
             </article>
             <article>
-                <h4>Susan Philips</h4>
+                <h4 class="member-name">Susan Philips</h4>
                 <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg" alt="SusanImg">
             </article>
             <article>
-                <h4>Taylor Roberts</h4>
+                <h4 class="member-name">Taylor Roberts</h4>
                 <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7104a331530d1b0611da55093b7dc421.jpg" alt="TaylorImg">
             </article>
         </div>
     </section>
-    <!--Schedule-->
     <section>
         <h3>Schedule</h3>
         <table>
@@ -147,15 +143,15 @@
             </select>
         </form>
     </section>
-    <footer>
+    <footer class="dark-background footer">
         <section>
             <h5>Contact info</h5>
-            <address>IronSkydive <br> 33 Rue la Fayette, <br> 75009 Paris, <br> France <br> +33 (0) 619 193 088</address>
+            <address class="address">IronSkydive <br> 33 Rue la Fayette, <br> 75009 Paris, <br> France <br> +33 (0) 619 193 088</address>
             <h5>Follow us</h5>
             <ul>
-                <li>Twiter</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
+                <li><a href="#">Twiter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
             </ul>
         </section>
     </footer>
