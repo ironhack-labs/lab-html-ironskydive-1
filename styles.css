@@ -53,6 +53,10 @@ h5 {
 
 .nav-bar {
   background-color: rgb(25, 33, 41);
+  height: 60px;
+  top: 0;
+  z-index: 1;
+  position: sticky;
 }
 
 .nav-bar a {
@@ -61,9 +65,20 @@ h5 {
   font-size: 2em;
 }
 
-.nav-bar ul {
+.nav-bar a:hover {
+  color: rgb(213, 19, 19);
+}
+
+.nav-bar-ul {
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+  padding-top: 12px;
+}
+
+.nav-bar-ul li {
+  list-style: none;
 }
 
 .header {
@@ -71,6 +86,8 @@ h5 {
   background-position: 0, 0;
   background-repeat: no-repeat;
   height: 650px;
+  margin-top: 0px;
+  padding-top: 50px;
 }
 
 .header-title {
@@ -90,16 +107,22 @@ h5 {
   justify-content: space-evenly;
 }
 
+#general-information .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+}
+
 .dark-bg {
   background-color: rgb(25, 33, 41);
   color: white;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 370px;
+  margin: 0 auto;
+  width: 1200px;
+  padding: 75px 0;
 }
 
 .text {
@@ -119,31 +142,51 @@ h5 {
   padding: 10px 30px;
 }
 
+#structure div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #structure > div {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 5%;
 }
 
 .service-box {
   width: 40%;
   font-size: 1.7em;
   text-align: center;
-  border: 1px solid lightgrey;
+  border: 2px solid lightgrey;
   border-radius: 12px;
-  -webkit-box-shadow: 0px 2.5px 9px 3px rgba(191, 191, 191, 1);
-  -moz-box-shadow: 0px 2.5px 9px 3px rgba(191, 191, 191, 1);
+  box-sizing: border-box;
   box-shadow: 0px 2.5px 9px 3px rgba(191, 191, 191, 1);
-  /* padding: 10px 25px; */
-  margin: 0px 5px;
+  margin: 50px 5% 0 5%;
+  padding: 20px;
 }
 
 .service-box img {
   width: 125px;
 }
 
-#team > div {
+#team {
+  padding: 75px 0;
+  margin: 0 auto;
+}
+
+#team p {
+  width: 60%;
+  margin: 10px auto;
+}
+
+#team hr {
+  margin: 20px auto 30px auto;
+  width: 40%;
+}
+
+#team div {
   display: flex;
   justify-content: space-evenly;
 }
@@ -162,8 +205,7 @@ h5 {
 
 #team .member-name {
   font-size: 1.5em;
-  font-weight: 700;
-  text-align: center;
+  font-weight: 400;
 }
 
 #team img {
@@ -171,12 +213,22 @@ h5 {
   height: 180px;
 }
 
-hr {
-  width: 620px;
+.schedule-table {
+  margin: 0 auto 40px auto;
+  font-size: 1.5em;
+}
+
+.schedule-table th,
+td {
+  border-bottom: 1px solid black;
+  padding: 5px 10px;
+  text-align: center;
 }
 
 .footer {
-  font-size: 1.9;
+  padding: 40px 100px;
+  border-bottom: 25px;
+  font-size: 1.9em;
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -186,6 +238,7 @@ hr {
 .address {
   font-style: normal;
   font-size: 0.8em;
+  margin-bottom: 30px;
 }
 
 .footer a {
@@ -195,6 +248,7 @@ hr {
 
 .footer ul {
   list-style: none;
+  padding: 0;
 }
 
 .map-frame {
