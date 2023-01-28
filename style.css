@@ -107,13 +107,15 @@ header {
 .dark-background {
   background-color: rgb(25, 33, 41);
   color: white;
+  padding: 0 40px;
 }
 
 #general-information {
   display: flex;
   justify-content: space-evenly;
 }
-.general-information .container {
+
+#general-information .container {
   display: flex;
   flex-direction: column;
   align-items: center;
