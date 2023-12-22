@@ -16,7 +16,7 @@ That is why you will be working on this exercise on multiple occasions during th
 
 Ironhack loves coding, but we also like to practice extreme sports. In a new line of products, we have created a new company called _IronSkydive_. We offer a full skydiving experience.
 
-We are hoping you could help us to create our website because we are swamped starting the company and making sure that all our papers are aligned with the rules. :see_no_evil:
+We are hoping you could help us create our website because we are swamped starting the company and making sure that all our papers are aligned with the rules. :see_no_evil:
 
 As we mentioned earlier, you'll be working on this exercise through the next couple of lessons, but in the end, your goal is:
 
@@ -26,7 +26,10 @@ As we mentioned earlier, you'll be working on this exercise through the next cou
 
 <br>
 
-You will be working on a new pen, so proceed to [CodePen](https://codepen.io/) and create a new pen now. Ready to take the jump?
+If you are working on this exercise during your prework, you will be working on a new pen, so proceed to [CodePen](https://codepen.io/) and create a new pen now. 
+If you are already in the bootcamp, use your VS Code to work on the exercise.
+
+Ready to take the jump?
 
 <br>
 
@@ -36,7 +39,7 @@ You will be working on a new pen, so proceed to [CodePen](https://codepen.io/) a
 
 ### Part 1 - Block Elements
 
-In this part of the exercise, you are going to work with the block elements you learned. You have seen how the semantic block elements help us s to understand our website's composition better. Let's start by creating the basic HTML structure, which will be the following:
+In this part of the exercise, you are going to work with the block elements you learned. You have seen how the semantic block elements help us to understand our website's composition better. Let's start by creating the basic HTML structure, which will be the following:
 
 <br>
 
@@ -78,13 +81,13 @@ You have to create two different things here:
 
 ### Section 1
 
-This section has a dark background that will cover the whole width of the website. Later you will add the color to the background, so for now, no need to worry about this.
+This section has a dark background that will cover the whole width of the website. Later, you will add the color to the background, so for now, there is no need to worry about this.
 
 <!-- To create this effect, later on, we are going to create a container inside the section. This wrapper will be handy to set a specific width and center all the content in the screen when we get to CSS later on. -->
 
 It will contain three `<article>` tags to add the information under the header.
 
-Inside each `<article>`, add an `<h3>` tag for the different titles, and a paragraph for the white text. The result would be something like this:
+Inside each `<article>`, add an `<h3>` tag for the different titles and a paragraph for the white text. The result would be something like this:
 
 <br>
 
@@ -208,7 +211,7 @@ The header of the project is incomplete. First, you need to add a logo to the he
 
 Remember to add a descriptive alternative text, just in case the image doesn't load. A good option would be "IronSkydive Logo".
 
-It is common to find quotes in _italic_ in different places, so this is what we are going to do. Add the quote in italic (using inline elements) inside the `<aside>` element, with the text "The best experience of our lives".
+It is common to find quotes in _italics_ in different places, so this is what we are going to do. Add the quote in italics (using inline elements) inside the `<aside>` element, with the text "The best experience of our lives".
 In a new line, this time using a _block_ level element (`<p>`), add the names of the authors. The names will be "Ariel Quiónes & Gonzalo Manrique, Ironhack Founders".
 
 <br>
@@ -267,7 +270,7 @@ Remember to add an alternative descriptive text in the `alt` attribute. Each of 
 
 ### Section 3
 
-Let's add the team information in the section. You should have three different articles without any information. Inside each article, you will add the team member name in the **bold** text (but this is something you will worry about when we come to the styling). You can use _block_ level tag, `<h4>` to wrap each name. Under the name, you will have to add the team member's photo. You can find the images here:
+Let's add the team information in the section. You should have three different articles without any information. Inside each article, you will add the team member's name in the **bold** text (but this is something you will worry about when we come to the styling). You can use _block_ level tag, `<h4>` to wrap each name. Under the name, you will have to add the team member's photo. You can find the images here:
 
 - **Harold Rothstein**, `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg`
 - **Susan Phillips**, `https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg`
