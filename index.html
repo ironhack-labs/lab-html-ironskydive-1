@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!--Barra de Navegación-->
-    <nav>
+    <nav class="nav-bar">
         <ul>
             <li><a href="#structure">Day Structure</a></li>
             <li><a href="#team">Team</a></li>
@@ -18,25 +20,25 @@
         </ul>
     </nav>
     <!--Header-->
-    <header>
+    <header class="header">
         <h1><img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png"
                 alt="Skydive Logo">IronSkyDive </h1>
         <h2>Let the trip begin</h2>
         <!--Aside-->
-        <aside>
+        <aside class="quote">
             <i>"The best experience of our lives"</i>
             <p>Ariel Quiñones & Gonzalo Manrique, Ironhack Founders</p>
         </aside>
     </header>
     <!--Seccion 1, Welcome-->
-    <section>
+    <section id="general-information" class="dark-background">
         <!--Article 1, Presentation-->
         <article>
             <header>
                 <h3>Hello!</h3>
             </header>
             <p>Welcome to IronSkyDive, the best adventure you will ever have.</p>
-            <a href="#">Learn more</a>
+            <a href="#" class="link-btn">Learn more</a>
         </article>
         <!--Article 2, About us-->
         <article>
@@ -44,7 +46,7 @@
                 <h3>About us</h3>
             </header>
             <p>We like a lot programming websites, but we also love to practice sport.</p>
-            <a href="#">Register</a>
+            <a href="#" class="link-btn">Register</a>
         </article>
         <!--Article 3, Wanna join-->
         <article>
@@ -52,11 +54,11 @@
                 <h3>Wanna join?</h3>
             </header>
             <p>Join our fitness program to be in good shape while learning.</p>
-            <a href="#">Learn more</a>
+            <a href="#" class="link-btn">Learn more</a>
         </article>
     </section>
     <!--Section 2, Day Structure-->
-    <section>
+    <section id="structure">
         <header>
             <h3>How do we structure the day?</h3>
         </header>
@@ -100,7 +102,7 @@
         </div>
     </section>
     <!--Section 3, Team-->
-    <section>
+    <section id="team" class="dark-background">
         <header>
             <h3>Team</h3>
             <p>Our team collectively has 75 years of experience. Odds are, when you jump out of the plane with these
@@ -129,60 +131,83 @@
         </div>
     </section>
     <!--Section 4, Schedule-->
-    <section>
+    <section id="schedule">
         <header>
             <!--Schedule calendar-->
-            <h4>Schedule</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th><time>9:00</time> - <time>11:00</time></th>
-                        <th></th>
-                        <th></th>
-                        <th>X</th>
-                        <th></th>
-                        <th>X</th>
-                        <th>X</th>
-                    </tr>
-                    <tr>
-                        <th><time>12:00</time> - <time>14:00</time></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th>X</th>
-                        <th>X</th>
-                    </tr>
-                    <tr>
-                        <th><time>15:00</time> - <time>17:00</time></th>
-                        <th></th>
-                        <th></th>
-                        <th>X</th>
-                        <th>X</th>
-                        <th>X</th>
-                        <th>X</th>
-                    </tr>
-                </tbody>
-            </table>
+            <h3>Schedule</h3>
         </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><time>9:00</time> - <time>11:00</time></th>
+                    <th></th>
+                    <th></th>
+                    <th>X</th>
+                    <th></th>
+                    <th>X</th>
+                    <th>X</th>
+                </tr>
+                <tr>
+                    <th><time>12:00</time> - <time>14:00</time></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>X</th>
+                    <th>X</th>
+                </tr>
+                <tr>
+                    <th><time>15:00</time> - <time>17:00</time></th>
+                    <th></th>
+                    <th></th>
+                    <th>X</th>
+                    <th>X</th>
+                    <th>X</th>
+                    <th>X</th>
+                </tr>
+            </tbody>
+        </table>
         <!--Schedule a Time Slot-->
         <header>
-            <h4>Schedule a Time Slot</h4>
+            <h3>Schedule a Time Slot</h3>
         </header>
+        <form action="/some-url" method="post">
+            <label for="email">Email</label><br>
+            <input type="text" name="email" id="email" placeholder="Write your email"><br>
+            <label for="participants">Participants</label><br>
+            <input type="text" name="participants" id="participants" placeholder="Number of participants"><br>
+            <label for="date">Date:</label><br>
+            <input type="date" name="date" id="date"><br>
+            <label for="time">Time:</label><br>
+            <select name="time" id="time">
+                <option value= null>Select Time</option>
+                <option value="wednesday 9:00-11:00">Wednesday 9:00-11:00</option>
+                <option value="wednesday 15:00-17:00">Wednesday 15:00-17:00</option>
+                <option value="thursday 15:00-17:00">Thursday 15:00-17:00</option>
+                <option value="friday 9:00-11:00">Friday 9:00-11:00</option>
+                <option value="friday 12:00-14:00">Friday 12:00-14:00</option>
+                <option value="friday 15:00-17:00">Friday 15:00-17:00</option>
+                <option value="saturday 9:00-11:00">Saturday 9:00-11:00</option>
+                <option value="saturday 12:00-14:00">Saturday 12:00-14:00</option>
+                <option value="saturday 15:00-17:00">Saturday 15:00-17:00</option>
+            </select> <br>
+            <button type="submit">Reserve Your Slot!</button>
+          </form>
     </section>
     <!--Footer-->
-    <footer>
+    <footer class="dark-background footer">
+    <!--Contact info-->    
         <section>
             <h5>Contact Information</h5>
             <address>IronSkydive<br>33 Rue la Fayette,<br>75009 Paris,<br>France<br>+33 (0) 619 193 088</address>
@@ -192,6 +217,10 @@
                 <li><a href="https://www.facebook.com/theironhack/?locale=es_ES" target="_blank">Facebook</a></li>
                 <li><a href="https://www.instagram.com/ironhack/?hl=es" target="_blank">Instagram</a></li>
             </ul>
+        </section>
+        <!--Map--> 
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.910864912745!2d2.1876743760601602!3d41.39774207129847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2e4ddd5122f%3A0xfe5222819e3b6768!2sIronhack%3A%20Tech%20Bootcamps%20in%20Barcelona!5e0!3m2!1ses!2ses!4v1705172280429!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </footer>
 </body>
