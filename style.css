@@ -1,0 +1,51 @@
+#section1 {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text color to contrast against dark background */
+    padding: 20px;
+}
+article {
+    margin-bottom: 20px; /* Space between articles */
+}
+#section2 {
+    background-color: #555; /* Different dark background color for section 2 */
+    color: white; /* White text color to contrast against dark background */
+    padding: 20px;
+}
+/* Styling for section 3 */
+#section3 {
+    background-color: #444; /* Another dark background color for section 3 */
+    color: white; /* White text color to contrast against dark background */
+    padding: 20px;
+}
+#section4 {
+    background-color: #666; /* Different dark background color for section 4 */
+    color: white; /* White text color to contrast against dark background */
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #444; /* Header background color */
+}
+footer {
+    background-color: #222; /* Dark footer background */
+    color: white; /* White text color for footer */
+    padding: 20px;
+}
+footer ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+footer ul li {
+    margin: 5px 0; /* Space between list items */
+}
+
+</style>
