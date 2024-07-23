@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20;
+}
+
+.nav {
+  padding: 5px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+
+  li a {
+    color: aliceblue;
+    text-decoration: none;
+  }
+}
+
+.nav,
+.section1,
+.section3,
+.footer {
+  background-color: rgb(25, 33, 41);
+}
+
+.header {
+  background-image: url(https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding-top: 10px;
+  line-height: 10px;
+  position: relative;
+}
+
+header>h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Condensed";
+  font-size: 60px;
+}
+
+header>h2 {
+  font-family: "Roboto Condensed";
+  text-align: center;
+  color: antiquewhite;
+  text-shadow: #020819 8px -20px 9px;
+}
+
+.header-phrase{
+  margin-top: 110px;
+  margin-left: 100px;
+  p{
+    color: black;
+  }
+}
+
+.section1 {
+  display: flex;
+  justify-content:space-evenly;
+  padding: 30px 0px 60px 0px;
+
+  .boxes{
+    width: 250px;
+    text-align: center;
+    color: aliceblue;
+    p{
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.link{
+  font-family: "Roboto Condensed";
+  color: aliceblue;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: rgb(67, 163, 230);
+  list-style: none;
+  text-decoration: none;
+  font-size: small;
+}
+
+.section2>h3{
+  text-align: center;
+  margin: 50px;
+
+}
+
+.section2 div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 130px 50px 130px;
+  gap: 25px;
+  .boxes{
+    width: 400px;
+    text-align: center;
+    border: 2px solid #eee;
+    border-radius: 20px;
+    padding: 15px;
+    img{
+      width: 90px;
+    }
+    p{
+      font-size: 14px;
+      color: #6c757d;
+    }
+  }
+}
+
+.teamImg {
+  width: 280px;
+  height: 200px;
+}
+
+.section3{
+  gap: 120px;
+  padding-bottom: 60px;
+}
+.section3 h3, p{
+  color: #eee;
+
+}
+
+.section3 h3{
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Roboto Condensed";
+  font-size: 30px;
+}
+.section3 p{
+  text-align: center;
+  padding: 0 400px 0 400px;
+}
+
+.section3 .boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  gap: 80px;
+}
+
+.section4{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 300px;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  thead{
+    border-bottom: 1px solid black;
+    tr th{
+      padding-bottom: 10px;
+    }
+  }
+  tbody tr{
+    border-bottom: 1px solid black;
+    td{
+      padding: 10px;
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  font-family: "Roboto Condensed";  
+  text-align: center;
+  padding: 40px 100px;
+  margin-bottom: 25px;
+  color: white;
+  .address{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    line-height: 25px;
+  }
+  h5{
+    font-size: 1rem;
+  }
+  ul{
+    text-align: start;
+    color: rgb(67, 163, 230);;
+    li{
+      text-decoration: none;
+      list-style: none;
+    }
+  } 
+}
+
+hr {
+  width: 30%;
+}
