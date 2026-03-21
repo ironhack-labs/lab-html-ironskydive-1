@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAV */
+nav {
+  background-color: black;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: lightgray;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 60px;
+  background-color: lightgray;
+}
+
+header h2 {
+  color: gray;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px;
+}
+
+/* PRIMEIRA SECTION */
+#structure {
+  display: flex;
+  justify-content: space-around;
+  background-color: #111;
+  color: white;
+}
+
+#structure article {
+  width: 30%;
+}
+#structure a {
+  color: white;
+  display: block;
+  margin-top: 10px;
+}
+
+/* SEGUNDA SECTION */
+#day div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* IMAGENS */
+#team img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+/* TEAM */
+#team {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
