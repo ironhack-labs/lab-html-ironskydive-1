@@ -1,4 +1,4 @@
-/* RESET */
+
 
 *{
     margin:0;
@@ -13,7 +13,7 @@ body{
     background:#f4f4f4;
 }
 
-/* CONTAINER */
+
 
 .container{
     width:90%;
@@ -21,7 +21,7 @@ body{
     margin:auto;
 }
 
-/* NAVBAR */
+
 
 nav{
     background:#111827;
@@ -49,7 +49,7 @@ nav a:hover{
     color:#60a5fa;
 }
 
-/* HERO SECTION */
+
 
 header{
     height:700px;
@@ -114,7 +114,7 @@ aside{
     font-size:18px;
 }
 
-/* DARK SECTION */
+
 
 .section-dark{
     background:#111827;
@@ -122,7 +122,7 @@ aside{
     padding:80px 0;
 }
 
-/* ARTICLES */
+
 
 .articles-grid{
     display:grid;
@@ -141,7 +141,6 @@ article p{
     font-size:18px;
 }
 
-/* BUTTON */
 
 .btn{
     display:inline-block;
@@ -157,7 +156,6 @@ article p{
     background:#2563eb;
 }
 
-/* GENERAL SECTIONS */
 
 section{
     padding:90px 0;
@@ -169,7 +167,7 @@ section{
     margin-bottom:70px;
 }
 
-/* DAY STRUCTURE */
+
 
 .day-grid{
     display:grid;
@@ -200,7 +198,7 @@ section{
     color:#555;
 }
 
-/* TEAM */
+
 
 .team-desc{
     text-align:center;
@@ -227,7 +225,7 @@ section{
     object-fit:cover;
 }
 
-/* TABLE */
+
 
 table{
     width:100%;
@@ -248,7 +246,7 @@ table th{
     color:white;
 }
 
-/* FORM */
+
 
 .schedule-form{
     width:500px;
@@ -273,7 +271,7 @@ table th{
     font-size:16px;
 }
 
-/* FOOTER */
+
 
 footer{
     background:#111827;
@@ -305,49 +303,3 @@ footer a:hover{
     text-decoration:underline;
 }
 
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-    nav ul{
-        gap:30px;
-    }
-
-    .articles-grid{
-        grid-template-columns:1fr;
-    }
-
-    .day-grid{
-        grid-template-columns:1fr;
-    }
-
-    .team-grid{
-        grid-template-columns:1fr;
-    }
-
-    .schedule-form{
-        width:100%;
-    }
-
-    .footer-content{
-        flex-direction:column;
-        gap:40px;
-    }
-
-    aside{
-        left:30px;
-        bottom:40px;
-    }
-
-    .hero-content h1{
-        font-size:45px;
-    }
-
-    .hero-content h2{
-        font-size:28px;
-    }
-
-    .quote{
-        font-size:20px;
-    }
-}
