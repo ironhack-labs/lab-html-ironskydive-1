@@ -1,0 +1,353 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    color:#000;
+    background:#f4f4f4;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    background:#111827;
+    padding:18px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* HERO SECTION */
+
+header{
+    height:700px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.2),
+    rgba(0,0,0,0.2)),
+    url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+}
+
+.hero-content{
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+
+    position:relative;
+}
+
+.logo{
+    width:180px;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-size:70px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:900;
+}
+
+.hero-content h2{
+    font-size:40px;
+    margin-top:10px;
+    text-transform:uppercase;
+}
+
+aside{
+    position:absolute;
+    left:100px;
+    bottom:80px;
+    text-align:left;
+}
+
+.quote{
+    font-size:28px;
+    font-style:italic;
+    margin-bottom:10px;
+}
+
+.authors{
+    font-size:18px;
+}
+
+/* DARK SECTION */
+
+.section-dark{
+    background:#111827;
+    color:white;
+    padding:80px 0;
+}
+
+/* ARTICLES */
+
+.articles-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:50px;
+    text-align:center;
+}
+
+article h3{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+article p{
+    margin-bottom:25px;
+    font-size:18px;
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#60a5fa;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+/* GENERAL SECTIONS */
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:70px;
+}
+
+/* DAY STRUCTURE */
+
+.day-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:40px;
+}
+
+.day-card{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.day-card img{
+    width:90px;
+    margin-bottom:20px;
+}
+
+.day-card h4{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.day-card p{
+    color:#555;
+}
+
+/* TEAM */
+
+.team-desc{
+    text-align:center;
+    width:70%;
+    margin:0 auto 60px;
+    font-size:18px;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:40px;
+    text-align:center;
+}
+
+.team-member h4{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+.team-member img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+/* TABLE */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:70px;
+    background:white;
+}
+
+table th,
+table td{
+    border:1px solid #ccc;
+    padding:18px;
+    text-align:center;
+}
+
+table th{
+    background:#111827;
+    color:white;
+}
+
+/* FORM */
+
+.schedule-form{
+    width:500px;
+    margin:auto;
+}
+
+.form-group{
+    margin-bottom:25px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group select{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:white;
+    padding:70px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+footer h5{
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    nav ul{
+        gap:30px;
+    }
+
+    .articles-grid{
+        grid-template-columns:1fr;
+    }
+
+    .day-grid{
+        grid-template-columns:1fr;
+    }
+
+    .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .schedule-form{
+        width:100%;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        gap:40px;
+    }
+
+    aside{
+        left:30px;
+        bottom:40px;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .hero-content h2{
+        font-size:28px;
+    }
+
+    .quote{
+        font-size:20px;
+    }
+}
