@@ -1,12 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="es">
+  <!-- mi pagina estara configurada para el idioma: español -->
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <!-- conexion con el archivo .css -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- para que se pueda reproducir en todo tipo de pantallas - diseño responsivo -->
+    <title>Pen</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <!-- creo los 3 botones iniciales del menu -->
+      <ul class="nav-bar-ul">
+        <!-- creo una lista con 3 items -->
+        <li>
+          <a class="nav-bar-item" href="#estructura">Estructura del dia</a>
+        </li>
+        <li><a class="nav-bar-item" href="#equipo">Equipo</a></li>
+        <li><a class="nav-bar-item" href="#cronograma">Cronograma</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <!-- encabezado -->
+      <h1>
+        <img
+          src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png"
+          alt="Logotipo de IronSkyDive"
+        />IronSkydive
+      </h1>
+      <br />
+      <!-- salto de pagina - punto y aparte. -->
+      <h2>"Que comience el viaje"</h2>
+      <aside class="quote">
+        <i>"La mejor experiencia de vuestra vida."</i>
+        <p>Ariel Quiónes y Gonzalo Manrique, Fundadores de Ironhack</p>
+      </aside>
+    </header>
+
+    <!-- section 1 -->
+
+    <section class="fondoOscuro, dark-background" id="general-information">
+      Sesion1
+      <article class="container">
+        <h3>titulo1</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          aut dolor repudiandae excepturi. Laudantium, officiis.
+        </p>
+        <a href="#" class="link-btn">Mas Información</a>
+        <!-- href="#" me dirige al inicio de la pagina-->
+      </article>
+      <article class="container">
+        <h3>About Us</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure suscipit
+          nemo accusamus quis, consectetur aliquam!
+        </p>
+        <a href="#" class="link-btn">Ver Video</a>
+      </article>
+
+      <article class="container">
+        <h3>Wanna Join?</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+          vero? Quaerat repellat error excepturi officia.
+        </p>
+        <a href="#" class="link-btn">Registro</a>
+      </article>
+    </section>
+
+    <!-- section 2 -->
+
+    <section class="container" id="structure">
+      Sesion2
+      <h3>¿Cómo estructuramos el día?</h3>
+      <div>
+        <article class="service-box">
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png"
+            alt="Icono libros"
+          />
+          <h4>Training</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequatur provident autem consectetur veniam, tenetur officiis
+            accusantium mollitia nam maiores debitis.
+          </p>
+        </article>
+        <br />
+
+        <article class="service-box">
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-get-ready.png
+"
+            alt="Icono Perfil"
+          />
+          <h4>Get Ready</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+            voluptatem illum hic ratione eligendi animi fuga quidem dolor,
+            laudantium, in a unde molestiae libero tempora!
+          </p>
+        </article>
+        <br />
+        <article class="service-box">
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-fly.png
+"
+            alt="Icono Avion"
+          />
+          <h4>Jump!</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+            aspernatur praesentium vitae eligendi aut eveniet nesciunt. Corporis
+            error aut, quidem quam exercitationem in perferendis cupiditate?
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- section 3-->
+
+    <section class="fondoOscuro, dark-background" id="team">
+      Sesion3
+      <h3>Team</h3>
+      <p class="section-text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero adipisci
+        in soluta earum quo maiores delectus animi iste amet? Quaerat.
+      </p>
+      <hr />
+      <div>
+        <!-- ponemos las fotos en los recuadros junto a los nombres -->
+        <article>
+          <h4 class="member-name">Harold Rothstein</h4>
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_c18b1c463b80090894237a262dfdfbad.jpg"
+            alt="Harold Rothstein"
+          />
+        </article>
+        <article>
+          <h4 class="member-name">Susan Phillips</h4>
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a18d6123a7c8e75f7e70a4e59b941093.jpg"
+            alt="Susan Phillips"
+          />
+        </article>
+        <br />
+        <article>
+          <h4 class="member-name">Taylor Roberts</h4>
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_7104a331530d1b0611da55093b7dc421.jpg"
+            alt="Taylor Roberts"
+          />
+        </article>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+
+    <section class="container" id="schedule">
+      Sesion4
+      <h3>Cronograma</h3>
+      <table class="schedule-table" cellpadding="0" cellspacing="0">
+        <!--desde aqui se crea la tabla-->
+        <thead>
+          <!--encabezado de la tabla-->
+          <th>Tiempo</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+          <th>Sábado</th>
+        </thead>
+        <tbody>
+          <!-- cuerpo de la tabla-->
+          <tr>
+            <td>9:00-12:00</td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <td>12:00 - 14:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <td>15:00-17:00</td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Programa una franja horaria</h3>
+
+      <form action="/register" class="slot-form" method="post" ;>
+        <!-- formulario-->
+        <div class="slot-form-container">
+          <label for="email"> Email: </label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="slot-form-container">
+          <label for="number">Participants: </label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Number of participants"
+          />
+        </div>
+
+        <div class="slot-form-container">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" />
+        </div>
+
+        <div class="slot-form-container">
+          <label> Time </label>
+          <select>
+            <option value="early">9 -11 Early</option>
+            <option value="mid">12-14 Mid</option>
+            <option value="late">15-17 Late</option>
+          </select>
+        </div>
+
+        <div class="slot-form-container">
+          <button type="submit">¡Reserva tu plaza!</button>
+          <!-- boton creado con etiqueta button mejor que con input-->
+        </div>
+      </form>
+    </section>
+
+    <!-- pie de pagina -->
+
+    <footer class="dark-background footer">
+      <section>
+        <h5>Informacion de Contacto.</h5>
+        <address class="adress">
+          IronSkyDive <br />
+          33 Rue La Fayette, <br />
+          75009 Paris, <br />Francia <br />+33 (0) 619 193 088
+        </address>
+        <br />
+        <h5>"Síguenos"</h5>
+        <br />
+        <ul class="nav-bar-ul">
+          <li><a href="#"> Twitter </a></li>
+          <!-- href="#" me dirige al inicio de la pagina-->
+          <li><a href="#"> Facebook </a></li>
+          <!-- href="#" me dirige al inicio de la pagina-->
+          <li><a href="#"> Instagram </a></li>
+          <!-- href="#" me dirige al inicio de la pagina-->
+        </ul>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047744348!2d2.3354330160472316!3d48.87456857928921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sIronhack!5e0!3m2!1sen!2ses!4v1495208746099"
+        class="map-frame"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen
+      >
+      </iframe>
+    </footer>
+  </body>
 </html>
